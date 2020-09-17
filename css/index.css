@@ -101,7 +101,6 @@ h2 {
 }
 p {
   font-size: 1.5rem;
-  color: #c4ced4;
 }
 body {
   justify-content: center;
@@ -111,7 +110,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
+  border: 5px solid #005c5c;
   width: 100%;
   background-color: #c4ced4;
 }
@@ -126,19 +125,18 @@ header nav {
 header nav a {
   padding: 2% 2%;
   border-radius: 1rem;
-  margin-left: 5%;
+  margin: 0 3%;
   background-color: #0c2c56;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border: 2px solid #005c5c;
-  color: #c4ced4;
+  color: white;
+  text-decoration: none;
 }
 
 .mission-statement-container {
   width: 100%;
   margin-top: 5%;
-
   padding: 2% 0;
-
   display: flex;
   justify-content: flex-end;
   background-color: #c4ced4;
@@ -147,27 +145,52 @@ header nav a {
 .mission-statement {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   background-color: #0c2c56;
   margin-right: 5%;
-  color: #c4ced4;
+  color: white;
   border: 5px solid #005c5c;
+  text-align: center;
 }
 
 .mission-statement h2 {
-  margin: 5% 0;
+  margin-top: 12%;
 }
 
 .mission-statement p {
-  margin: 0 5%;
+  margin: 5% 5% 0 5%;
   align-items: center;
   font-size: 2rem;
+  color: white;
 }
 
 .mission-statement-image {
   width: 20%;
   height: max;
   margin: 0 5%;
-
   border: 5px solid #005c5c;
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature {
+  color: black;
+  border: 5px solid #005c5c;
+  width: 40%;
+  margin: 5%;
+}
+
+.create,
+.plan,
+.manage {
+  text-align: center;
+}
+
+.create-image {
+  width: 75%;
 }
