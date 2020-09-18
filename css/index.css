@@ -1,4 +1,3 @@
-/* Add CSS styling here */
 html,
 body,
 div,
@@ -87,13 +86,13 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 html {
   font-size: 62.5%;
-  margin: 5% 15%;
 }
 h1 {
   font-size: 5rem;
-  margin-left: 5%;
+  margin: 0 5%;
   color: #0c2c56;
 }
 h2 {
@@ -104,6 +103,8 @@ p {
 }
 body {
   justify-content: center;
+  font-family: "Alegreya", serif;
+  margin: 5% 15%;
 }
 
 .header-container {
@@ -111,13 +112,12 @@ body {
   justify-content: flex-end;
   align-items: center;
   border: 5px solid #005c5c;
-  width: 100%;
+  width: 95%;
   background-color: #c4ced4;
 }
 
 header nav {
   display: flex;
-  flex-grow: 1;
   justify-content: flex-end;
   align-items: center;
   font-size: 1rem;
@@ -134,7 +134,7 @@ header nav a {
 }
 
 .mission-statement-container {
-  width: 100%;
+  width: 95%;
   margin-top: 5%;
   padding: 2% 0;
   display: flex;
@@ -145,7 +145,7 @@ header nav a {
 .mission-statement {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   background-color: #0c2c56;
   margin-right: 5%;
@@ -167,7 +167,7 @@ header nav a {
 
 .mission-statement-image {
   width: 20%;
-  height: max;
+
   margin: 0 5%;
   border: 5px solid #005c5c;
 }
@@ -200,7 +200,7 @@ header nav a {
 .create h2,
 .plan h2,
 .manage h2 {
-  margin: 5% 0;
+  margin: 3% 0;
   background-color: #0c2c56;
   color: white;
   font-size: 3rem;
@@ -218,7 +218,75 @@ header nav a {
 }
 
 .features-image {
-  width: 99%;
+  width: 95%;
   height: auto;
   border: 2px solid #005c5c;
+}
+footer {
+  background-color: #0c2c56;
+  color: white;
+  border: 5px solid #005c5c;
+}
+
+footer h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 0.5%;
+}
+
+.contact a {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-container nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container nav a {
+    margin: 0;
+    width: 20vw;
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  .mission-statement-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+
+  .mission-statement-image {
+    width: 50%;
+    margin-bottom: 5%;
+  }
+
+  .mission-statement {
+    margin-left: 5%;
+  }
+
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+  }
+  .feature {
+    width: 200%;
+  }
 }
