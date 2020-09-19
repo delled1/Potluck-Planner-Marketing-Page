@@ -109,7 +109,7 @@ body {
 
 .header-container {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   border: 5px solid #005c5c;
@@ -270,9 +270,9 @@ footer h2 {
 
   .header-container nav a {
     margin: 0;
-    width: 20vw;
+    width: 20rem;
     text-align: center;
-    margin: 5% 0;
+    margin: 1%;
   }
 
   .mission-statement-container {
@@ -302,5 +302,26 @@ footer h2 {
   }
   .feature {
     width: 200%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  nav a {
+    color: red;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  .header-container nav a {
+    margin: 0;
+    width: 20rem;
+    text-align: center;
+    margin: 0;
   }
 }
