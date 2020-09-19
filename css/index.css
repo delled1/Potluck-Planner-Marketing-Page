@@ -104,25 +104,34 @@ p {
 body {
   justify-content: center;
   font-family: "Alegreya", serif;
-  margin: 5% 15%;
+  margin: 5% 10%;
 }
 
 .header-container {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   border: 5px solid #005c5c;
-  width: 95%;
+  width: 100%;
   background-color: #c4ced4;
+  padding: 2% 0;
+}
+h1 {
+  text-align: center;
 }
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-size: 1rem;
+  width: 50%;
 }
+
 header nav a {
+  display: flex;
+  justify-content: space-around;
   padding: 2% 2%;
   border-radius: 1rem;
   margin: 0 3%;
@@ -131,16 +140,19 @@ header nav a {
   border: 2px solid #005c5c;
   color: white;
   text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .mission-statement-container {
-  width: 95%;
+  width: 100%;
   margin-top: 5%;
   padding: 2% 0;
   display: flex;
   justify-content: flex-end;
   background-color: #c4ced4;
   border: 5px solid #005c5c;
+  padding: 2% 0;
 }
 .mission-statement {
   display: flex;
@@ -152,10 +164,6 @@ header nav a {
   color: white;
   border: 5px solid #005c5c;
   text-align: center;
-}
-
-.mission-statement h2 {
-  margin-top: 12%;
 }
 
 .mission-statement p {
@@ -176,6 +184,8 @@ header nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 2% 0;
 }
 
 .feature {
@@ -183,8 +193,8 @@ header nav a {
   flex-direction: column;
   border: 5px solid #005c5c;
   width: 50%;
-  height: 38vh;
-  margin: 5%;
+  height: auto;
+  margin: 3%;
   background-color: #c4ced4;
 }
 
@@ -218,7 +228,7 @@ header nav a {
 }
 
 .features-image {
-  width: 95%;
+  max-width: 100%;
   height: auto;
   border: 2px solid #005c5c;
 }
@@ -226,6 +236,8 @@ footer {
   background-color: #0c2c56;
   color: white;
   border: 5px solid #005c5c;
+  width: 100%;
+  padding: 2% 0;
 }
 
 footer h2 {
@@ -283,8 +295,10 @@ footer h2 {
   .features-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
+    justify-content: flex-end;
     width: 95%;
+    margin: 0 auto;
   }
   .feature {
     width: 200%;
