@@ -285,6 +285,121 @@ h3 {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 499px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-container nav a {
+    margin: 0;
+    width: 40vw;
+    text-align: center;
+    margin: 1%;
+  }
+
+  .mission-statement-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 5% 0;
+  }
+
+  .mission-statement-image {
+    width: 80%;
+    margin: 5% 0 5% 5%;
+  }
+
+  .mission-statement {
+    margin-left: 5%;
+  }
+
+  .features-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    margin: 2%;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .features-image {
+    width: 80%;
+  }
+  .create,
+  .plan,
+  .manage {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .create h2,
+  .plan h2,
+  .manage h2 {
+    width: 90%;
+  }
+  .create p,
+  .plan p,
+  .manage p {
+    margin: 5% 0;
+    padding: 2%;
+    width: 90%;
+  }
+
+  footer a {
+    font-size: 90%;
+    margin: 0 auto;
+  }
+
+  /* about  */
+
+  h3 {
+    font-size: 3rem;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    width: 80%;
+    border: 2px solid #005c5c;
+    background-color: #0c2c56;
+    color: white;
+    margin: 1%;
+    text-align: center;
+  }
+  .about-us img {
+    width: 80%;
+    height: 80%;
+    border: 2px solid #005c5c;
+    margin-top: 2%;
+  }
+
+  .info {
+    margin-top: -3%;
+  }
+}
+
 @media (min-width: 500px) {
   .header-container {
     display: flex;
